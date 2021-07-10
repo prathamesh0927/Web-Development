@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+    background-color: #e4fbff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+h1{
+    display: inline-block;
+    padding-top: 0;
+    margin: 1%;
+    color: #7868e6;
+    font-family: 'Pacifico', cursive;
+}
+h2{
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 3%;
+}
+
+.header{
+    margin: 4% auto 3%;
+    
+}
+.refresh{
+    font-size: 3rem;
+    margin: 2%;
+    font-family: 'Pacifico', cursive;
+    color: #7868e6;
+}
+.raceflag{
+    width: 10%;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+

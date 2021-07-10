@@ -1,0 +1,32 @@
+
+<%- include("header.ejs") -%>
+    <div class="box" id="heading">
+        <h1>Today day is <%=days%> </h1>
+    </div>
+
+    <div class="box">
+        <% items.forEach(item => {%>
+            <form action="/delete" method="POST">
+                
+                <div class="item">
+                    <input type="checkbox" value=<%=item.id %> name="checkbox" onChange="this.form.submit()">
+                    <p><%= item.name %></p>
+                </div>
+                <input type="hidden" value="<%= days %>" name="list" > </input>
+                
+            </form> 
+        <% }); %>
+            
+         
+        
+        <form class="item" action="/" method="POST">
+            <input type="text" name="todo" placeholder="Add new Task">
+            <button type="submit" name="list" value="<%= days %>">+</button>
+        </form>
+    </div>
+<%- include("footer.ejs") -%>
+        
+
+        
+        
+       
